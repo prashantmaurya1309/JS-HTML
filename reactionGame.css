@@ -1,0 +1,12 @@
+#shape{
+    width: 200px;
+    height: 100px;
+    background-color: darkcyan;
+    display: none;
+    position: relative;
+}
+#msg{
+    font-size: x-large;
+    font-family: cursive;
+    color: darkorange;
+}

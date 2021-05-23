@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varaiable</title>
+
+    <style>
+        #chg-txt{
+            position:relative;
+        }
+        #p-chg{
+
+        }
+        #inp{
+            background-color: darkgrey;
+        }
+        #dice{
+            height: 200px;
+            float: left;
+            width: auto;
+        }
+        #guess{
+            float: left;
+        }
+        #d-number{
+            clear: both;
+        }
+        img{
+            height: 200px;
+            
+            width: auto;
+        }
+        
+
+
+    </style>
+
+</head>
+<body>
+    <input id="inp" type="text"/>
+
+    <button id="chg-txt">change text</button>
+
+    <hr>
+
+
+
+    <p id="p-chg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla atque,
+         voluptates numquam maxime deserunt odit impedit eos quos voluptatibus ad ut
+         saepe cupiditate, vel sit nesciunt vitae quis facere eveniet.</p>
+
+    <hr>
+    
+    <p id="guess"> <h4>guess the number on dice</h4> </p>
+    <img id="dice" src="images-js/dice.png"">
+    <input type="text" name="guessed" id="g-ed">
+    <button id="g-but">enter u'r guess</button>
+    <div id="d-number"></div>
+   
+
+
+
+    <script>
+
+        document.getElementById("chg-txt").onclick=()=>{
+            document.getElementById("p-chg").innerHTML=document.getElementById("inp").value;
+        }
+
+        function getRandomDice(){
+            return Math.floor(Math.random()*6)
+        }
+
+        document.getElementById("g-but").onclick=()=>{
+            let temp=document.getElementById("g-ed").value;
+            if(temp==""){
+                alert("you havent entered anything!!!!");
+            }
+            let x=getRandomDice()+1
+            if(temp==x){
+                console.log("U got it! right answer is" + x)
+            }
+            else{
+                console.log("correct answer is :"+ x)
+            }
+            if(x==1){
+                let img = document.createElement("img");
+
+                img.src="images-js/1.png";
+                let src = document.getElementById("d-number");
+
+                src.appendChild(img);
+                console.log("correct answer is :"+ x)
+            }
+            if(x==2){
+                let img = document.createElement("img");
+
+                img.src="images-js/2.png";
+                let src = document.getElementById("d-number");
+
+                src.appendChild(img);
+                console.log("correct answer is :"+ x)
+            }
+            if(x==3){
+                let img = document.createElement("img");
+
+                img.src="images-js/3.png";
+                let src = document.getElementById("d-number");
+
+                src.appendChild(img);
+                console.log("correct answer is :"+ x)
+            }
+            if(x==4){
+                let img = document.createElement("img");
+
+                img.src="images-js/4.png";
+                let src = document.getElementById("d-number");
+
+                src.appendChild(img);
+                console.log("correct answer is :"+ x)
+            }
+            if(x==5){
+                let img = document.createElement("img");
+
+                img.src="images-js/5.png";
+                let src = document.getElementById("d-number");
+
+                src.appendChild(img);
+                console.log("correct answer is :"+ x)
+            }
+            if(x==6){
+                let img = document.createElement("img");
+
+                img.src="images-js/6.png";
+                let src = document.getElementById("d-number");
+
+                src.appendChild(img);
+                console.log("correct answer is :"+ x)
+            }
+        }
+
+
+    </script>
+</body>
+</html>

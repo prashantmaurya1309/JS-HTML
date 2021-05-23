@@ -1,0 +1,15 @@
+.ver{
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+.hor{
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+td{
+    height: 100px;
+    width: 100px;
+}
+table{
+    margin:auto;
+}

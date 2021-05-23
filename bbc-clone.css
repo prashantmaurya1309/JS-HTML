@@ -1,0 +1,91 @@
+.top-bar{
+    width: 1300px;
+    background-color:white;
+    margin: 0 auto;
+    height: 50px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#logo{
+    height: auto;
+    width: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+.topbar-section{
+    height: 100%;
+    float: left;
+    border-left: 1px #CCCCCC solid;
+    padding: 10px;
+}
+#sign-in{
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 5px;
+    width: auto;
+    float: left;
+}
+#sign-in-text{
+    font-size: x-large;
+    position: relative;
+    top: 11px;
+    margin-left: 15px;
+    font-weight: bold;
+    padding-right: 13px;
+}
+#bell-div{
+    height: 100%;
+    float: left;
+
+}
+#bell-img{
+    height: 80%;
+    float: left;
+    padding: 15px;
+    padding-right: 20px;
+}
+#line-img{
+    height: 70px;
+    float: left;
+    margin-left: 50px;
+}
+.topbar-menu{
+    font-weight: bolder;
+    font-size: 130%;
+    padding: 20px 20px 0px 20px;
+    border-bottom: deeppink solid;
+}
+#arrow{
+    height: 40%;
+    float: right;
+    padding: 3px 1px 0px 20px ;
+    padding-right: 2px;
+}
+#search{
+    background-color: #a9a9a9;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    margin: -5px;
+    float: left;
+}
+#mag-glass{
+    height: 70%;
+    float: right;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: -35px;
+}
+.clear{
+    clear: both;
+}
+
+#menu-container{
+    background: color #bb1919;
+    width: 100%;
+    height: 100px;
+}

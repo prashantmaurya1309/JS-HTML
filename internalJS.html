@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internal JS</title>
+
+    <style>
+
+        #txt{
+            float: left;
+        }
+        #button-change{
+            float: left;
+        }
+        #sec-para{
+            float: left;
+        }
+        #sec-button{
+            float: left;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <p id="txt">hello</p>
+    
+    <button id="button-change">click-to-change</button>
+
+    <hr>
+    <p id="sec-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nihil, 
+        similique quod expedita tempore dolor voluptatibus, corrupti officia consequuntur, 
+        natus mollitia asperiores accusamus dignissimos. Odio esse distinctio inventore itaque. Est?</p>
+    <button id="sec-button">change second text</button>  
+
+
+    <hr>
+    <button id="stylyish">style-them-all</button>
+    
+    
+
+    <script type="text/javascript">
+
+        let count =0;
+        document.getElementById("button-change").onclick = ()=>{
+            document.getElementById("txt").innerHTML = "hello Prashant Maurya"
+        }; 
+
+        document.getElementById("sec-button").onclick=()=>{
+            count = count+1;
+            document.getElementById("sec-para").innerHTML = document.getElementById("txt").innerHTML + count;
+        }
+
+        document.getElementById("stylyish").onclick =()=>{
+            document.getElementById("txt").style.color= "red";
+            document.getElementById("sec-para").style.color="violet";
+            document.getElementById("txt").style.fontSize="40px";
+        }
+
+
+    </script>
+</body>
+</html>

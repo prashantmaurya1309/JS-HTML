@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+
+    <style>
+
+        p {
+            color: indigo;
+            font-size: 250%;
+        }
+        h1{
+            color: rgb(247, 25, 25);
+        }
+        body{
+            background-color: rgb(211, 255, 205);
+        }
+        .red{
+            color: rgb(1, 12, 11);
+        }
+
+        .large{
+            font-size: 100%;
+        }
+
+        #green{
+            font-size: x-large;
+            color: rgb(14, 5, 1);
+        }
+        #fan{
+            color: maroon;
+            text-decoration-color: rgb(211, 181, 200);
+            text-decoration:underline;
+        }
+        .b-section{
+            background-color: orangered;
+            width: 50%;
+            float: right;
+        }
+        #b-side{
+            background-color: orangered;
+            color: rgb(1, 4, 19);
+            float:inline-start;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 class="red large">internal CSS</h1>
+
+    <p class="red"> ipsum dolor sit amet consectetur, adipisicing elit. Ex, quod praesentium?
+         Nobis similique mollitia expedita, nihil quod consectetur
+         necessitatibus vero perspiciatis non? Molestias dicta recusandae aspernatur eaque sint dolore soluta?
+    </p>
+    <div class="b-section"><p class="large">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse tempora velit 
+        sequi officiis cum aliquid. Provident suscipit esse pariatur quasi,
+         perspiciatis expedita. Aliquid et consequatur aliquam veritatis? Inventore, hic rem!</p></div>
+    
+
+     <p id="green"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Hic sunt officia consectetur architecto, asperiores, ex fugiat explicabo ipsa ipsam 
+         mollitia laboriosam impedit <span id="fan">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Non dignissimos quos recusandae animi ad quas reiciendis dolor odio, deserunt voluptatibus
+              ipsa blanditiis voluptatum tenetur? Molestiae incidunt cumque dolorem minima nemo.</span>
+               repellendus assumenda nihil cumque facilis libero rerum!</p>    
+
+      <div id="b-side"> <p id="green"> ipsum dolor sit amet consectetur adipisicing elit.
+        Temporibus natus sint possimus officia, ducimus adipisci provident illo distinctio 
+        architecto vel quae laudantium
+        eaque repellendus laboriosam repellat praesentium sequi veritatis? Officia!</p></div>        
+</body>
+</html>

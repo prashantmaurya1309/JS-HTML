@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+
+    <style>
+
+        #a-sec{
+            background-color: rgb(255, 153, 0);
+            color: rgb(83, 83, 16);
+            width: 30%;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+            opacity: 0.6;
+            height: 500px;
+        }
+        #b-sec{
+            background-color: teal;
+            color: thistle;
+            font-size: x-large;
+            width: 60%;
+            height: 147px ;
+            z-index: 4;
+
+        }
+
+        #opaque{
+            background-color: yellowgreen;
+            opacity: 0.4;
+            width: 70%;
+            height: 500px;
+            position: relative;
+            top: -300px;
+            left: 100px;
+            right: 200px;
+            z-index: 5;
+            font-size: 300%;
+        }
+
+        .fixed-as{
+            background-color: yellow;
+            position:fixed;
+            opacity: 0.3;
+            width: 400px;
+            height: 300px;
+            z-index: 3;
+            margin: 10px 100px;
+            top: 30px;
+            left: 200px;
+        }
+
+    </style>
+
+
+</head>
+<body><div id="a-sec">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque 
+    numquam eius autem placeat, cumque nesciunt quo, esse, nisi aliquam
+    assumenda eaque iste vitae reprehenderit provident iusto nostrum culpa ea facilis.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab ut sunt non
+        atque magni ipsa quod cumque molestiae, aperiam recusandae,
+        architecto nulla quas porro placeat dolorem obcaecati! Numquam, iure?</p>
+    <div id="b-sec">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aperiam quidem 
+        numquam architecto eos accusamus porro eius? Quod iste illum ea alias qui 
+        suscipit non, temporibus reprehenderit corporis blanditiis eveniet!     </p>
+    </div>
+    <div class="fixed-as">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores perspiciatis provident,
+             eius quaerat ullam modi vitae dignissimos nesciunt facere ratione dolorum, fugit quo rerum 
+             voluptate. Nulla quo vel cumque veritatis!</p>
+    </div>  
+
+    <p>this is not floated Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem sint aspernatur ea dignissimos omnis! Sed, fuga ullam facilis consequuntur tempore quae voluptates nesciunt error, perspiciatis natus, inventore placeat! Autem, velit.</p>
+    <div class="not-float">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore sit ad eaque illum, atque consequatur saepe alias enim illo dolorem velit libero magnam modi eligendi quas repellendus dicta culpa?</div>
+    <div id="opaque"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aperiam quidem 
+        numquam architecto eos accusamus porro eius? Quod iste illum ea alias qui 
+        suscipit non, temporibus reprehenderit corporis blanditiis eveniet!     </p></div>
+
+    
+        
+</body>
+</html>

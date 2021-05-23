@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+    <style>
+        #myNum{
+            height: 40px;
+            width: 100px;
+            font-size: xx-large;
+            padding-left: 20px;
+        }
+        #guess{
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div id="for"></div>
+    <hr>
+
+    <p><h4>computer will guess the number on our dice!!</h4></p>
+    <select id="myNum">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+
+    </select>
+    <button id="guess">Now-guess!</button>
+
+    <script>
+        let ar =['Lorem ipsum dolor sit amet','consectetur adipisicing elit','Similique necessitatibus','cum facere animi perspiciatis hic natus magnam modi dicta at magni','repudiandae sed sunt','voluptates cupiditate eum. Dolorum, aliquam quasi.'];
+        
+        let str = "";
+        
+        for(let i = 0; i < ar.length; i++) {
+            str = str + "<p>" + ar[i] + "</p>"; 
+        }
+        document.getElementById("for").innerHTML = str;
+
+        document.getElementById("guess").onclick=()=>{
+            let number = document.getElementById("myNum").value
+            let gotIt =false;
+            let count =0;
+            while(gotIt == false){
+                let g = Math.floor(Math.random()*6)+1
+                if(count>5){
+                    gotIt=true
+                    document.getElementById("for").innerHTML = "<h3>"+ "cant guess it !! even after " + count + "guesses "+ "</h3>"
+                }
+                if(g == number){
+                    document.getElementById("for").innerHTML = "got it!! in " + count;
+                    gotIt = true
+                }
+                else{
+                    count++
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

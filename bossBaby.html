@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+        
+          th {
+            border: 2px solid;
+            padding: 8px;
+          }
+          
+          td {
+            border: 1.3px solid;
+            text-align: center;
+            padding: 8px;
+          }
+          
+          table {
+            border-collapse: collapse;
+            border: 2px solid;
+            width: 100%;
+          }
+
+          /*responsive*/
+          @media(max-width: 767px;)
+         
+
+    </style>
+    <title>JavaScript assignment by 1828259</title>
+</head>
+<body onLoad="onLoad()">
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Subject1 marks</th>
+            <th>Subject2 marks</th>
+            <th>Subject3 marks</th>
+            <th>Maximum marks</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody"></tbody>
+      </table>
+    </div>
+    <script>
+        const data = [
+        {
+          id: 1,
+          name: "Bruce Wayne",
+          subject1: 80,
+          subject2: 45,
+          subject3: 90,
+        },
+        {
+          id: 2,
+          name: "Diana",
+          subject1: 56,
+          subject2: 74,
+          subject3: 78,
+        },
+        {
+          id: 3,
+          name: "Clark Kent",
+          subject1: 67,
+          subject2: 78,
+          subject3: 90,
+        },
+        {
+          id: 4,
+          name: "Barry Allen",
+          subject1: 89,
+          subject2: 35,
+          subject3: 64,
+        },
+        {
+          id: 5,
+          name: "Arthur Curry",
+          subject1: 76,
+          subject2: 65,
+          subject3: 100,
+        },
+        {
+          id: 6,
+          name: "Victor Stone",
+          subject1: 99,
+          subject2: 87,
+          subject3: 64,
+        },
+      ];
+      
+      const onLoad = () => {
+        let tbodyEl = document.getElementById("studentTableBody");
+      
+        data.forEach((item, index) => {
+          let html = `
+                    <tr>
+                    <td>${item.id}</td>
+                    <td>${item.name}</td>
+                    <td>${item.subject1}</td>
+                    <td>${item.subject2}</td>
+                    <td>${item.subject3}</td>
+                    <td>${Math.max(item.subject1, item.subject2, item.subject3)}</td>
+                    </tr>
+                `;
+      
+          tbodyEl.innerHTML += html;
+        });
+      };
+      
+      console.log(data);
+    </script>
+</body>
+

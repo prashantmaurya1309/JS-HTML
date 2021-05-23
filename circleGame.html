@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Game</title>
+
+    <style>
+
+        #dot1{
+            height: 200px;
+            width:  200px;
+            border-radius: 50%;
+            background-color: deeppink;
+            float: left;
+        }
+        #dot2{
+            height: 300px;
+            width:  300px;
+            border-radius: 50%;
+            background-color: greenyellow;
+            float: right;
+        }
+        #dot3{
+            height: 340px;
+            width:  430px;
+            border-radius: 50%;
+            background-color:darkblue;
+            float: left;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div id="dot1"></div>
+    <div id="dot2"></div>
+    <div id="dot3"></div>
+
+
+
+    <script>
+        let count = 1;
+
+        let dot=0;
+        document.getElementById("dot1").onclick=()=>{
+            count=count-0.1;
+            document.getElementById("dot1").style.opacity=count;
+        }
+        /*document.getElementById("dot1").onmousemove=()=>{
+            count=count+0.1;
+            document.getElementById("dot1").style.opacity=count;
+        }*/
+        document.getElementById("dot2").onclick=()=>{
+            dot++;
+            console.log(dot);
+            if(dot%3==0){
+                document.getElementById("dot2").style.backgroundColor="red";
+                
+            }
+            if(dot%3==1){
+                document.getElementById("dot2").style.backgroundColor="yellow";
+                
+            }
+            if(dot%3==2){
+                document.getElementById("dot2").style.backgroundColor="green";
+                
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>
